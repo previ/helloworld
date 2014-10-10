@@ -4,10 +4,10 @@
     <title>CoderBot - An open, programmable robot</title>
     <description>CoderBot is an open source, raspberry pi robot specialized in teaching kids the basic of robotics and coding.
 </description>
-    <link>http://coderbot.org/helloworld//</link>
-    <atom:link href="http://coderbot.org/helloworld//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 10 Oct 2014 18:39:24 +0200</pubDate>
-    <lastBuildDate>Fri, 10 Oct 2014 18:39:24 +0200</lastBuildDate>
+    <link>http://coderbot.org/helloworld/</link>
+    <atom:link href="http://coderbot.org/helloworld/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 10 Oct 2014 21:18:10 +0200</pubDate>
+    <lastBuildDate>Fri, 10 Oct 2014 21:18:10 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Mon, 29 Sep 2014 02:46:00 +0200</pubDate>
-        <link>http://coderbot.org/helloworld//jekyll/update/2014/09/29/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://coderbot.org/helloworld//jekyll/update/2014/09/29/welcome-to-jekyll.html</guid>
+        <link>http://coderbot.org/helloworld/jekyll/update/2014/09/29/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://coderbot.org/helloworld/jekyll/update/2014/09/29/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>

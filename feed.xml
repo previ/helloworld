@@ -6,35 +6,169 @@
 </description>
     <link>http://coderbot.org/helloworld/</link>
     <atom:link href="http://coderbot.org/helloworld/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 10 Oct 2014 22:36:21 +0200</pubDate>
-    <lastBuildDate>Fri, 10 Oct 2014 22:36:21 +0200</lastBuildDate>
+    <pubDate>Sun, 12 Oct 2014 11:00:11 +0200</pubDate>
+    <lastBuildDate>Sun, 12 Oct 2014 11:00:11 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Esploratore</title>
+        <description>&lt;h3 id=&quot;descrizione&quot;&gt;Descrizione&lt;/h3&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;Il mondo è diverso visto da un robot. Specialmente se il robot ha un occhio solo, che guarda sempre avanti e in basso.
+In questo gioco dovremo cercare di orientarci in un ambiente sconosciuto, ricostruendone una mappa, avendo a disposizione solo le immagini che arrivano dal robot.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;h3 id=&quot;ingredienti&quot;&gt;Ingredienti&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Un ambiente isolato da quello dove ci troviamo (ad esempio la stanza o la classe a fianco)&lt;/li&gt;
+  &lt;li&gt;Alcuni fogli di carta, matita e gomma&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;preparazione&quot;&gt;Preparazione&lt;/h3&gt;
+&lt;p&gt;Ci si dispone in due gruppi: il primo prepara l’ambiente da esplorare in modo che sia sufficientemente complicato da esplorare ma percorribile per il robot.
+I due gruppi scelgono alcuni oggetti con forma e colore ben distinti, definiti “tesori”. Questi oggetti saranno posti nella stanza da esplorare e la loro identificazione e ubicazione costituirà l’obiettivo del gioco.
+Ad esempio, si possono predisporre degli ostacoli con dei libri, scatole, oggetti vari che si trovano nella stanza, ma in posizioni diverse da quelle solite.
+Il secondo gruppo si trova in una stanza vicina ma non deve assolutamente avere modo di osservare la prima, 
+A questo punto il robot viene posto, acceso, all’interno della stanza e il gioco comincia.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;il-gioco&quot;&gt;Il gioco&lt;/h3&gt;
+&lt;p&gt;Il secondo gruppo pilota il robot e cerca di orientarsi e ricostruire una mappa dell’ambiente e di trovare i “tesori” e la loro posizione sulla mappa.
+Il gioco finisce dopo un tempo prestabilito, o quando tutti i tesori sono stati trovati e il gruppo degli Esploratori decide che la mappa è completa
+Valutazione e premi
+Terminato il gioco, si valuta la mappa rispetto alla reale conformazione della stanza, 1 punto per ogni ostacolo correttamente tracciato e 5 per ogni tesoro trovato e correttamente posizionato.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
+        <link>http://coderbot.org/helloworld/project/2014/10/01/it-prj-play-1.html</link>
+        <guid isPermaLink="true">http://coderbot.org/helloworld/project/2014/10/01/it-prj-play-1.html</guid>
+        
+        <category>play</category>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Matematica a scacchi</title>
+        <description>&lt;p&gt;CoderBot finalmente ha a whole new website with all the information required to actually make the robot out of industry-standard parts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/helloworld/img/home_1.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Check out the CoderBot &lt;a href=&quot;/helloworld/how_to_build_1.html&quot;&gt;mechanics&lt;/a&gt; and &lt;a href=&quot;/helloworld/how_to_build_2.html&quot;&gt;hardware&lt;/a&gt; documentation for mechanical and electronics assembly instructions.&lt;/p&gt;
+
+&lt;p&gt;Check out the CoderBot &lt;a href=&quot;/helloworld/how_to_build_3.html&quot;&gt;software&lt;/a&gt; documentation for instructions on installing and configuring the software components.&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 29 Sep 2014 02:46:00 +0200</pubDate>
-        <link>http://coderbot.org/helloworld/jekyll/update/2014/09/29/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://coderbot.org/helloworld/jekyll/update/2014/09/29/welcome-to-jekyll.html</guid>
+        <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
+        <link>http://coderbot.org/helloworld/project/2014/10/01/it-prj-learn-1.html</link>
+        <guid isPermaLink="true">http://coderbot.org/helloworld/project/2014/10/01/it-prj-learn-1.html</guid>
+        
+        <category>learn</category>
         
         
-        <category>jekyll</category>
+        <category>project</category>
         
-        <category>update</category>
+      </item>
+    
+      <item>
+        <title>Benvenuti nel nuovo sito di CoderBot</title>
+        <description>&lt;p&gt;CoderBot finalmente ha a whole new website with all the information required to actually make the robot out of industry-standard parts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/helloworld/img/home_1.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Check out the CoderBot &lt;a href=&quot;/helloworld/how_to_build_1.html&quot;&gt;mechanics&lt;/a&gt; and &lt;a href=&quot;/helloworld/how_to_build_2.html&quot;&gt;hardware&lt;/a&gt; documentation for mechanical and electronics assembly instructions.&lt;/p&gt;
+
+&lt;p&gt;Check out the CoderBot &lt;a href=&quot;/helloworld/how_to_build_3.html&quot;&gt;software&lt;/a&gt; documentation for instructions on installing and configuring the software components.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
+        <link>http://coderbot.org/helloworld/blog/2014/10/01/it-coderbot-nuovo-sito.html</link>
+        <guid isPermaLink="true">http://coderbot.org/helloworld/blog/2014/10/01/it-coderbot-nuovo-sito.html</guid>
+        
+        <category>doc</category>
+        
+        <category>announce</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Esploratore</title>
+        <description>&lt;h3 id=&quot;descrizione&quot;&gt;Descrizione&lt;/h3&gt;
+
+&lt;p&gt;Il mondo è diverso visto da un robot. Specialmente se il robot ha un occhio solo, che guarda sempre avanti e in basso.
+In questo gioco dovremo cercare di orientarci in un ambiente sconosciuto, ricostruendone una mappa, avendo a disposizione solo le immagini che arrivano dal robot.&lt;/p&gt;
+
+&lt;h3 id=&quot;ingredienti&quot;&gt;Ingredienti&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Un ambiente isolato da quello dove ci troviamo (ad esempio la stanza o la classe a fianco)&lt;/li&gt;
+  &lt;li&gt;Alcuni fogli di carta, matita e gomma&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;preparazione&quot;&gt;Preparazione&lt;/h3&gt;
+&lt;p&gt;Ci si dispone in due gruppi: il primo prepara l’ambiente da esplorare in modo che sia sufficientemente complicato da esplorare ma percorribile per il robot.
+I due gruppi scelgono alcuni oggetti con forma e colore ben distinti, definiti “tesori”. Questi oggetti saranno posti nella stanza da esplorare e la loro identificazione e ubicazione costituirà l’obiettivo del gioco.
+Ad esempio, si possono predisporre degli ostacoli con dei libri, scatole, oggetti vari che si trovano nella stanza, ma in posizioni diverse da quelle solite.
+Il secondo gruppo si trova in una stanza vicina ma non deve assolutamente avere modo di osservare la prima, 
+A questo punto il robot viene posto, acceso, all’interno della stanza e il gioco comincia.&lt;/p&gt;
+
+&lt;h3 id=&quot;il-gioco&quot;&gt;Il gioco&lt;/h3&gt;
+&lt;p&gt;Il secondo gruppo pilota il robot e cerca di orientarsi e ricostruire una mappa dell’ambiente e di trovare i “tesori” e la loro posizione sulla mappa.
+Il gioco finisce dopo un tempo prestabilito, o quando tutti i tesori sono stati trovati e il gruppo degli Esploratori decide che la mappa è completa
+Valutazione e premi
+Terminato il gioco, si valuta la mappa rispetto alla reale conformazione della stanza, 1 punto per ogni ostacolo correttamente tracciato e 5 per ogni tesoro trovato e correttamente posizionato.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
+        <link>http://coderbot.org/helloworld/project/2014/10/01/en-prj-play-1.html</link>
+        <guid isPermaLink="true">http://coderbot.org/helloworld/project/2014/10/01/en-prj-play-1.html</guid>
+        
+        <category>play</category>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Chequered math</title>
+        <description>&lt;p&gt;CoderBot finalmente ha a whole new website with all the information required to actually make the robot out of industry-standard parts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/helloworld/img/home_1.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Check out the CoderBot &lt;a href=&quot;/helloworld/how_to_build_1.html&quot;&gt;mechanics&lt;/a&gt; and &lt;a href=&quot;/helloworld/how_to_build_2.html&quot;&gt;hardware&lt;/a&gt; documentation for mechanical and electronics assembly instructions.&lt;/p&gt;
+
+&lt;p&gt;Check out the CoderBot &lt;a href=&quot;/helloworld/how_to_build_3.html&quot;&gt;software&lt;/a&gt; documentation for instructions on installing and configuring the software components.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
+        <link>http://coderbot.org/helloworld/project/2014/10/01/en-prj-learn-1.html</link>
+        <guid isPermaLink="true">http://coderbot.org/helloworld/project/2014/10/01/en-prj-learn-1.html</guid>
+        
+        <category>learn</category>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to CoderBot all-new website</title>
+        <description>&lt;p&gt;CoderBot finally gets a whole new website with all the information required to actually make the robot out of industry-standard parts.
+Check out the CoderBot [mechanics][coderbot-make-mech] and &lt;a href=&quot;how_to_build_2.html&quot;&gt;hardware&lt;/a&gt; documentation for mechanical and electronics assembly instructions.
+Check out the CoderBot &lt;a href=&quot;how_to_build_3.html&quot;&gt;software&lt;/a&gt; documentation for instructions on installing and configuring the software components.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
+        <link>http://coderbot.org/helloworld/blog/2014/10/01/en-coderbot-nuovo-sito.html</link>
+        <guid isPermaLink="true">http://coderbot.org/helloworld/blog/2014/10/01/en-coderbot-nuovo-sito.html</guid>
+        
+        <category>doc</category>
+        
+        <category>announce</category>
+        
+        
+        <category>blog</category>
         
       </item>
     

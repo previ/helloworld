@@ -30,7 +30,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="canonical" href="http://coderbot.org/helloworld/en/how_to_build_3.html">
+    <link rel="canonical" href="http://coderbot.org/helloworld/it/how_to_build_mh.html">
 </head>
 
 
@@ -45,39 +45,39 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Navigation</span>
+                    <span class="sr-only">Navigazione</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">CoderBot</a>
+                <a class="navbar-brand" href="/helloworld/it/index.html">CoderBot</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="/helloworld/it/about.html">Cosa è</a>
                     </li>
                     <li>
-                        <a href="how_to_build_it.html">Make</a>
+                        <a href="/helloworld/it/how_to_build_it.html">Come costruirlo</a>
                     </li>
                     <li>
-                        <a href="prj_fun.html">Play</a>
+                        <a href="/helloworld/it/prj_fun.html">Gioca</a>
                     </li>
                     <li>
-                        <a href="prj_learn.html">Learn</a>
+                        <a href="/helloworld/it/prj_learn.html">Impara</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contacts</a>
+                        <a href="/helloworld/it/contact.html">Contatti</a>
                     </li>
                     <li>
-                        <a href="forum.html">Forum</a>
+                        <a href="https://groups.google.com/forum/#!forum/coderbot-users">Forum</a>
                     </li>
                     <li>
-                        <a href="blog-home-1.html">Blog</a>
+                        <a href="/helloworld/it/blog-home-1.html">Novità</a>
                     </li>
                     <li>
-                        <a href="../it/index.html">Italian</a>
+                        <a href="/helloworld/en/index.html">English</a>
                     </li>
                 </ul>
             </div>
@@ -91,13 +91,13 @@
                 <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Parte 3 - Software
-                    <small>Sistema operativo, componenti, programma.</small>
+                <h1 class="page-header">Telaio e motori
+                    <small>Vari modelli per varie esigenze.</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">CoderBot</a></li>
                     <li><a href="prj_fun.html">Come costruirlo</a></li>
-                    <li class="active">Software</li>
+                    <li class="active">Telaio e motori</li>
                 </ol>
             </div>
         </div>
@@ -121,28 +121,25 @@
 
         <!-- Related Projects Row -->
         <div class="row">
-
             <div class="col-md-12">
-            	<h2>Elenco delle componenti</h2>
+            	<h3>Versioni del telaio</h3>
+				<p>Il telaio di CoderBot è realizzato in vari materiali: legno, acrilico (plexiglass), cartone corrugato.</p>
+				<p>Per ogni materiale è disponibile un disegno (SVG) adatto ad essere inviato a un servizio di taglio laser per ottenere i pezzi pronti per essere assemblati.</p>
+				<p>E' sconsigliabile tagliare il materiale a mano, perché gli incastri sono molto precisi e difficile da riprodurre senza una macchina CNC.</p> 
             	<ul>
-            		<li>1 Raspberry PI - Model B o Model B+</li>
-            		<li>1 Raspberry Camera module</li>
-            		<li>1 Scheda di controllo motori</li>
-            		<li>1 Batteria</li>
-            		<li>2 Cavi USB</li>
+            		<li>Telaio acrilico - spessore 3mm - motori dc</li>
+            		<li>Telaio legno - spessore 3mm - motori dc</li>
+            		<li>Telaio legno - spessore 3mm - motori servo</li>
+            		<li>Telaio cartone corrugato - spessore 6mm - motori dc o servo</li>
             	</ul>
-                <h3>Raspberry PI</h3>
-                <p>CoderBot utilizza Raspberry Pi come controller principale, sono adatti il Model B e il recente B+, quest'ultimo preferibile per i ridotti consumi.</p>
-                <p>Il Model A può essere utilizzato per realizzare un robot "cieco", infatti per gestire la Camera, e soprattutto il riconoscimento degli oggetti, sono necessari circa 384MB (il Model B ne ha 512, il Model A si ferma a 256MB).</p>
-                <h3>Camera module</h3>
-                <p>Esistono due tipi di camera: una normale e una modificata per essere sensibile all'infrarosso per visione notturna. Salvo applicazioni particolari, si utilizza la Camera normale.</p>
-                <h3>Scheda di controllo motori</h3>
-                <p>Ne esistono di due tipi: una adatta al controllo di motori in corrente continua e una specifica e semplificata per controllare servomotori in modalità PWM, da scegliere in base alle caratteristiche dei motori.</p>
-                <h3>Batteria</h3>
-				<p>La batteria deve avere due uscite indipendenti, una per alimentare Raspberry e una per alimentare i mototi tramite la scheda di controllo. 
-				E' possibile in alternativa utilizzare due batterie più piccole indipendenti a condizione  che la corrente in uscita sia di almeno 1A su 5V</p>
-                <h3>Cavi USB</h3>
-                <p>Due cavi USB-A - USB-Micro (maschio-maschio) per collegare l'output della batteria a Raspberry e alla Scheda di controllo motori</p>
+                <h3>Motori</h3>
+                <p>CoderBot può pilotare due tipo di motori: corrente continua (DC) e servo.</p>
+                <p>La scelta del tipo di motori dipende da come si intende impiegare il bot: i motori dc sono più veloci, più economici ma meno precisi, i servo al permettono un miglior controllo e si prestano per applicazioni dove servono movimento più accurati.</p>
+                <h3>Ruota libera</h3>
+                <p>Si consiglia di utilizzare una sfera come questa come terzo punto di appoggio.</p>
+                <h3>Bulloneria varia</h3>
+                <p>Viti M3x20 e relativi dadi, M3x10 e M2x10 per fissare la camera nel caso di telaio in acrilico.</p>
+                <h3></h3>
             </div>
 
         </div>
@@ -161,12 +158,5 @@
 
     </div>
     <!-- /.container -->
-
-    <!-- jQuery Version 1.11.0 -->
-    <script src="../js/jquery-1.11.0.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
   </body>
-
 </html>

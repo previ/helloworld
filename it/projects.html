@@ -33,7 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="canonical" href="http://coderbot.org/helloworld/en/how_to_build_hw.html">
+    <link rel="canonical" href="http://coderbot.org/helloworld/it/projects.html">
 </head>
 
 
@@ -48,36 +48,36 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Navigation</span>
+                    <span class="sr-only">Navigazione</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/helloworld/en/index.html">CoderBot</a>
+                <a class="navbar-brand" href="/helloworld/it/index.html">CoderBot</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/helloworld/en/about.html">About</a>
+                        <a href="/helloworld/it/about.html">Cosa è</a>
                     </li>
                     <li>
-                        <a href="/helloworld/en/how_to_build_it.html">Make</a>
+                        <a href="/helloworld/it/how_to_build_it.html">Come costruirlo</a>
                     </li>
                     <li>
-                        <a href="/helloworld/en/projects.html">Play & Learn</a>
+                        <a href="/helloworld/it/projects.html">Gioca e Impara</a>
                     </li>
                     <li>
-                        <a href="/helloworld/en/contact.html">Contacts</a>
+                        <a href="/helloworld/it/contact.html">Contatti</a>
                     </li>
                     <li>
                         <a href="https://groups.google.com/forum/#!forum/coderbot-users" target="new">Forum</a>
                     </li>
                     <li>
-                        <a href="/helloworld/en/blog-home-1.html">News</a>
+                        <a href="/helloworld/it/blog-home-1.html">Novità</a>
                     </li>
                     <li>
-                        <a href="/helloworld/it/index.html">Italian</a>
+                        <a href="/helloworld/en/index.html">English</a>
                     </li>
                 </ul>
             </div>
@@ -91,61 +91,102 @@
                 <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Hardware
-                    <small>Raspberry Pi, motor controller, battery</small>
+                <h1 class="page-header">Gioca e impara con CoderBot
+                    <small>Una selezione di giochi e progetti educativi per singoli, piccoli gruppi o classi</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">CoderBot</a></li>
-                    <li><a href="how_to_build_it.html">How to build it</a></li>
-                    <li class="active">Hardware</li>
+                    <li><a href="index.html">CoderBot</a>
+                    </li>
+                    <li class="active">Gioca e Impara</li>
                 </ol>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Portfolio Item Row -->
-        <div class="row">
+   		
+   		
 
-            <div class="col-md-12">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img class="img-responsive" src="../img/build_hw.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-md-7">
+                <a href="/helloworld/project/2014/10/01/it-prj-play-1.html">
+                    <img class="img-responsive img-hover" src="/helloworld/img/home_1.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <a class="" href="/helloworld/project/2014/10/01/it-prj-play-1.html"><h3>Esploratore</h3></a>
+                <h4>Il mondo è diverso visto da un robot.</h4>
+                <p><h3 id="descrizione">Descrizione</h3>
+
+</p>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Related Projects Row -->
+        <hr>
+
+ 		
+		
+   		
+
         <div class="row">
-
-            <div class="col-md-12">
-            	<h2>Elenco delle componenti</h2>
-            	<ul>
-            		<li>1 Raspberry PI - Model B o Model B+</li>
-            		<li>1 Raspberry Camera module</li>
-            		<li>1 Scheda di controllo motori</li>
-            		<li>1 Batteria</li>
-            		<li>2 Cavi USB</li>
-            	</ul>
-                <h3>Raspberry PI</h3>
-                <p>CoderBot utilizza Raspberry Pi come controller principale, sono adatti il Model B e il recente B+, quest'ultimo preferibile per i ridotti consumi.</p>
-                <p>Il Model A può essere utilizzato per realizzare un robot "cieco", infatti per gestire la Camera, e soprattutto il riconoscimento degli oggetti, sono necessari circa 384MB (il Model B ne ha 512, il Model A si ferma a 256MB).</p>
-                <h3>Camera module</h3>
-                <p>Esistono due tipi di camera: una normale e una modificata per essere sensibile all'infrarosso per visione notturna. Salvo applicazioni particolari, si utilizza la Camera normale.</p>
-                <h3>Scheda di controllo motori</h3>
-                <p>Ne esistono di due tipi: una adatta al controllo di motori in corrente continua e una specifica e semplificata per controllare servomotori in modalità PWM, da scegliere in base alle caratteristiche dei motori.</p>
-                <h3>Batteria</h3>
-				<p>La batteria deve avere due uscite indipendenti, una per alimentare Raspberry e una per alimentare i mototi tramite la scheda di controllo. 
-				E' possibile in alternativa utilizzare due batterie più piccole indipendenti a condizione  che la corrente in uscita sia di almeno 1A su 5V</p>
-                <h3>Cavi USB</h3>
-                <p>Due cavi USB-A - USB-Micro (maschio-maschio) per collegare l'output della batteria a Raspberry e alla Scheda di controllo motori</p>
+            <div class="col-md-7">
+                <a href="/helloworld/project/2014/10/01/it-prj-learn-1.html">
+                    <img class="img-responsive img-hover" src="/helloworld/img/home_1.jpg" alt="">
+                </a>
             </div>
+            <div class="col-md-5">
+                <a class="" href="/helloworld/project/2014/10/01/it-prj-learn-1.html"><h3>Matematica a scacchi</h3></a>
+                <h4>Scoprire la matematica muovendosi in uno spazio a scacchi</h4>
+                <p><p>CoderBot finalmente ha a whole new website with all the information required to actually make the robot out of industry-standard parts.</p>
 
+</p>
+            </div>
         </div>
+        <!-- /.row -->
+
+        <hr>
+
+ 		
+		
+   		
+		
+   		
+		
+   		
+		
+   		
+		
+
+        <hr>
+
+        <!-- Pagination -->
+        <!--div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div-->
         <!-- /.row -->
 
 
@@ -162,5 +203,4 @@
     </div>
     <!-- /.container -->
   </body>
-
 </html>

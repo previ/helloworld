@@ -14,7 +14,7 @@
     <link href="/helloworld/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/helloworld/css/modern-business.css" rel="stylesheet">
+    <link href="/helloworld/css/coderbot.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="/helloworld/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -40,7 +40,7 @@
     <div class="container">
 
             <script type="text/javascript">
-$.ajax({ 
+  $.ajax({ 
     url: "http://ajaxhttpheaders.appspot.com", 
     dataType: 'jsonp', 
     success: function(headers) {
@@ -48,7 +48,7 @@ $.ajax({
         redirectSite(language);
     }
   });
-  
+
 function redirectSite(lang) {
 	if(lang.indexOf('it')>=0) {
 		window.location.href="it/index.html";
@@ -58,7 +58,15 @@ function redirectSite(lang) {
 }
     </script>
 
+<div class="row">
+<div class="col-md-12">
 <h2><center>Please wait...</center><h2>
+</div>
+<hr>
+<div class="col-md-12">
+<p><center>...or select your language: <a href="./en/index.html" class="btn btn-primary">English</a> <a href="./it/index.html" class="btn btn-primary">Italiano</a></center><p>
+</div>
+</div>
 
 
     </div>

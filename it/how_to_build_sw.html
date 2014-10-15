@@ -15,7 +15,7 @@
     <link href="/helloworld/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/helloworld/css/modern-business.css" rel="stylesheet">
+    <link href="/helloworld/css/coderbot.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="/helloworld/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -123,26 +123,44 @@
         <div class="row">
 
             <div class="col-md-12">
-            	<h2>Elenco delle componenti</h2>
-            	<ul>
-            		<li>1 Raspberry PI - Model B o Model B+</li>
-            		<li>1 Raspberry Camera module</li>
-            		<li>1 Scheda di controllo motori</li>
-            		<li>1 Batteria</li>
-            		<li>2 Cavi USB</li>
-            	</ul>
-                <h3>Raspberry PI</h3>
-                <p>CoderBot utilizza Raspberry Pi come controller principale, sono adatti il Model B e il recente B+, quest'ultimo preferibile per i ridotti consumi.</p>
-                <p>Il Model A può essere utilizzato per realizzare un robot "cieco", infatti per gestire la Camera, e soprattutto il riconoscimento degli oggetti, sono necessari circa 384MB (il Model B ne ha 512, il Model A si ferma a 256MB).</p>
-                <h3>Camera module</h3>
-                <p>Esistono due tipi di camera: una normale e una modificata per essere sensibile all'infrarosso per visione notturna. Salvo applicazioni particolari, si utilizza la Camera normale.</p>
-                <h3>Scheda di controllo motori</h3>
-                <p>Ne esistono di due tipi: una adatta al controllo di motori in corrente continua e una specifica e semplificata per controllare servomotori in modalità PWM, da scegliere in base alle caratteristiche dei motori.</p>
-                <h3>Batteria</h3>
-				<p>La batteria deve avere due uscite indipendenti, una per alimentare Raspberry e una per alimentare i mototi tramite la scheda di controllo. 
-				E' possibile in alternativa utilizzare due batterie più piccole indipendenti a condizione  che la corrente in uscita sia di almeno 1A su 5V</p>
-                <h3>Cavi USB</h3>
-                <p>Due cavi USB-A - USB-Micro (maschio-maschio) per collegare l'output della batteria a Raspberry e alla Scheda di controllo motori</p>
+				<hr>
+				<p>Questa sezione descrive le componenti Software necessarie a far girare CoderBot</p>
+                <h3>Raspbian</h3>
+                <p>CoderBot si basa sulla distribuzione Linux Raspbian, è opportuno aggiornare sia il firmware che il sistema operativo all'ultima versione disponibile.</p>
+				<h4>Installazione</h4>
+				<p>Scaricare il l'immagine di Raspbian e caricarla sulla scheda SD con uno dei seguenti metodi, in base al sistema operativo di cui si dispone.</p>
+                <h3>UV4L</h3>
+                <p>User-mode driver per Raspberry Camera module, necessario se si usa la Camera.</p>
+				<h4>Installazione</h4>
+				<p>Seguire le istruzioni a questo link.</p>
+                <h3>hostapd</h3>
+                <p>Gestione wifi in modalità Access Point.</p>
+				<h4>Installazione</h4>
+				<p>Scaricare hostapd, configurare...</p>
+                <h3>DNSMasq</h3>
+                <p>DNS server.</p>
+				<h4>Installazione</h4>
+				<p>Seguire le istruzioni a questo link.</p>
+                <h3>pigpio</h3>
+                <p>Libreria per la gestione dei GPIO.</p>
+				<h4>Installazione</h4>
+				<p>Seguire le istruzioni a questo link.</p>
+                <h3>ESpeak</h3>
+                <p>Sintesi vocale.</p>
+				<h4>Installazione</h4>
+				<p>Seguire le istruzioni a questo link.</p>
+                <h3>SimpleCV</h3>
+                <p>Framework per la gestione delle immagini, necessario se si usa la camera.</p>
+				<h4>Installazione</h4>
+				<p>Seguire le istruzioni a questo link.</p>
+                <h3>Flask</h3>
+                <p>Il webserver (python) che eroga la webapp.</p>
+				<h4>Installazione</h4>
+				<p>Seguire le istruzioni a questo link.</p>
+                <h3>CoderBot runtime</h3>
+                <p>Il software di CoderBot vero e proprio.</p>
+				<h4>Installazione</h4>
+				<p>Seguire le istruzioni a questo link.</p>
             </div>
 
         </div>
@@ -153,7 +171,7 @@
 <footer class="site-footer">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; coderbot.org 2014</p>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Quest'opera di <a xmlns:cc="http://creativecommons.org/ns#" href="http://coderbot.org" property="cc:attributionName" rel="cc:attributionURL">CoderBot.org</a> è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale</a>.
                 </div>
             </div>
 </footer>

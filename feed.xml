@@ -6,8 +6,8 @@
 </description>
     <link>http://coderbot.org/helloworld/</link>
     <atom:link href="http://coderbot.org/helloworld/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 12 Oct 2014 23:45:57 +0200</pubDate>
-    <lastBuildDate>Sun, 12 Oct 2014 23:45:57 +0200</lastBuildDate>
+    <pubDate>Thu, 16 Oct 2014 00:41:17 +0200</pubDate>
+    <lastBuildDate>Thu, 16 Oct 2014 00:41:17 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -16,6 +16,8 @@
 
 &lt;p&gt;Il mondo è diverso visto da un robot. Specialmente se il robot ha un occhio solo, che guarda sempre avanti e in basso.
 In questo gioco dovremo cercare di orientarci in un ambiente sconosciuto, ricostruendone una mappa, avendo a disposizione solo le immagini che arrivano dal robot.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/helloworld/img/mars_1140x300.jpg&quot; alt=&quot;Mars&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;ingredienti&quot;&gt;Ingredienti&lt;/h3&gt;
 &lt;ul&gt;
@@ -40,7 +42,13 @@ Terminato il gioco, si valuta la mappa rispetto alla reale conformazione della s
         <link>http://coderbot.org/helloworld/project/2014/10/01/it-prj-play-1.html</link>
         <guid isPermaLink="true">http://coderbot.org/helloworld/project/2014/10/01/it-prj-play-1.html</guid>
         
-        <category>play</category>
+        <category>play,</category>
+        
+        <category>single,</category>
+        
+        <category>group,</category>
+        
+        <category>class</category>
         
         
         <category>project</category>
@@ -49,13 +57,11 @@ Terminato il gioco, si valuta la mappa rispetto alla reale conformazione della s
     
       <item>
         <title>Matematica a scacchi</title>
-        <description>&lt;p&gt;CoderBot finalmente ha a whole new website with all the information required to actually make the robot out of industry-standard parts.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/helloworld/img/home_1.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Check out the CoderBot &lt;a href=&quot;/helloworld/how_to_build_1.html&quot;&gt;mechanics&lt;/a&gt; and &lt;a href=&quot;/helloworld/how_to_build_2.html&quot;&gt;hardware&lt;/a&gt; documentation for mechanical and electronics assembly instructions.&lt;/p&gt;
+        <description>&lt;p&gt;Check out the CoderBot &lt;a href=&quot;/helloworld/how_to_build_1.html&quot;&gt;mechanics&lt;/a&gt; and &lt;a href=&quot;/helloworld/how_to_build_2.html&quot;&gt;hardware&lt;/a&gt; documentation for mechanical and electronics assembly instructions.&lt;/p&gt;
 
 &lt;p&gt;Check out the CoderBot &lt;a href=&quot;/helloworld/how_to_build_3.html&quot;&gt;software&lt;/a&gt; documentation for instructions on installing and configuring the software components.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/helloworld/img/math_700x300.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
@@ -71,13 +77,13 @@ Terminato il gioco, si valuta la mappa rispetto alla reale conformazione della s
     
       <item>
         <title>Benvenuti nel nuovo sito di CoderBot</title>
-        <description>&lt;p&gt;CoderBot finalmente ha a whole new website with all the information required to actually make the robot out of industry-standard parts.&lt;/p&gt;
+        <description>&lt;p&gt;CoderBot finalmente ha un sito che raccoglie tutte le informazioni necessarie a costruirne un esemplare partendo da materiali facilmente reperibili.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/helloworld/img/home_1.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/helloworld/img/build_hw.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Check out the CoderBot &lt;a href=&quot;/helloworld/how_to_build_1.html&quot;&gt;mechanics&lt;/a&gt; and &lt;a href=&quot;/helloworld/how_to_build_2.html&quot;&gt;hardware&lt;/a&gt; documentation for mechanical and electronics assembly instructions.&lt;/p&gt;
+&lt;p&gt;Oltre alla lista completa delle componenti, nella sezione &lt;a href=&quot;/helloworld/it/how_to_build_mh.html&quot;&gt;telaio&lt;/a&gt; sono disponibili i disegni del telai, pronti per essere tagliati tramite lasercutter, mentre nella sezione &lt;a href=&quot;/helloworld/it/how_to_build_hw.html&quot;&gt;hardware&lt;/a&gt; sono disponibili gli schemi dei circuiti che possono essere realizzati su una breadborad oppure con schede millefori per prototipazioni.&lt;/p&gt;
 
-&lt;p&gt;Check out the CoderBot &lt;a href=&quot;/helloworld/how_to_build_3.html&quot;&gt;software&lt;/a&gt; documentation for instructions on installing and configuring the software components.&lt;/p&gt;
+&lt;p&gt;Nelle pagine &lt;a href=&quot;/helloworld/it/how_to_build_sw.html&quot;&gt;software&lt;/a&gt; invece sono descritte le componenti software con relative istruzioni per l’installazione.&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
@@ -138,13 +144,7 @@ Terminato il gioco, si valuta la mappa rispetto alla reale conformazione della s
     
       <item>
         <title>Chequered math</title>
-        <description>&lt;p&gt;CoderBot finalmente ha a whole new website with all the information required to actually make the robot out of industry-standard parts.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/helloworld/img/home_1.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Check out the CoderBot &lt;a href=&quot;/helloworld/how_to_build_1.html&quot;&gt;mechanics&lt;/a&gt; and &lt;a href=&quot;/helloworld/how_to_build_2.html&quot;&gt;hardware&lt;/a&gt; documentation for mechanical and electronics assembly instructions.&lt;/p&gt;
-
-&lt;p&gt;Check out the CoderBot &lt;a href=&quot;/helloworld/how_to_build_3.html&quot;&gt;software&lt;/a&gt; documentation for instructions on installing and configuring the software components.&lt;/p&gt;
+        <description>&lt;p&gt;Let’s play with math and space!&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>

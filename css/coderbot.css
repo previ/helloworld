@@ -73,13 +73,30 @@ footer {
     margin: 50px 0;
 }
 
+a.jumbo:hover { 
+	text-decoration: none
+}    
+
+ul.list-social-icon-size {
+	font-size: 64px;
+}
+
 /* Responsive Styles */
+
+@media(max-width:1199px) {
+	ul.list-social-icon-size {
+		font-size: 48px;
+	}
+}
 
 @media(max-width:991px) {
     .customer-img,
     .img-related {
         margin-bottom: 30px;
     }
+	ul.list-social-icon-size {
+		font-size: 48px;
+	}
 }
 
 @media(max-width:767px) {
@@ -90,6 +107,7 @@ footer {
     header.carousel .carousel {
         height: 70%;
     }
+	ul.list-social-icon-size {
+		font-size: 32px;
+	}    
 }
-
-a.jumbo:hover { text-decoration: none}    

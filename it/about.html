@@ -123,24 +123,29 @@
 
         <!-- Related Projects Row -->
         <div class="row">
-
             <div class="col-md-12">
-                <h2>Che cos'è</h2>
+                <h2>Perché CoderBot</h2><a name="why"></a>
                 <p>CoderBot è un robot orientato alla didattica.</p>
                 <p>L'obiettivo principale del progetto è realizzare un robot in grado di essere programmato da bambini dai 6 anni in avanti, e che rimanga interessante e offra spunti per l'apprendimento a ragazzi fino ai 14 anni (e oltre).</p>
 				<img src="../img/home_2.jpg" width="700">
-				<h3>Come è fatto</h3>
+				<h3>Come è fatto</h3><a name="how"></a>
                 <p>E' un veicolo con due ruote motrici anteriori indipendenti e un terzo punto di appoggio posteriore costituito da una sfera libera.</p>
 				<p>E' basato su <a href="http://www.raspberrypi.org" target="new">Raspberry PI</a>, un computer completo (CPU, GPU, audio, memoria RAM e flash).</p>
 				<p>Alla scheda principale è collegata una videocamera, una scheda di controllo per i due motori (DC oppure servo) e un adattatore wifi. L'audio è amplificato tramite un altoparlante autoalimentato.</p>
 				<p>Il sistema operativo è Raspbian, una versione di Linux debian specifica per Raspberry, su cui si appoggiano alcune componenti per gestire rete, videocamera, motori e interfaccia utente, quest'ultima realizzata come una web application html5 a sua volta erogata da un web server.</p>
-                <h3>Cosa può fare</h3>
+                <h3>Cosa può fare</h3><a name="what"></a>
                 <p>Il robot è in grado di muoversi su superfici piane: avanti, indietro e ruotare sul posto o curvare con raggi variabili, agendo sulla velocità dei due motori.</p>
                 <img src="../img/easy.jpg" width="400">
+                <a name="wifi"></a>
                 <p>E' controllabile via web tramite un pc, un tablet o uno smartphone che sia in grado di connettersi via wifi al robot.</p>
                 <img src="../img/mars_700x300.jpg" width="400">
+                <a name="rover"></a>
                 <p>CoderBot può essere utilizzato come un "rover" teleguidato, grazie alla telecamera integrata trasmette le immagini dell'ambiente che gli si trova davanti.</p>
-                <img src="../img/coding.png" width="400">
+                <img src="../img/remote.jpg">
+                <a name="audio"></a>
+                <p>E' in grado di emettere suoni: audio wav o mp3 oppure pronunciare frasi definite dall'utente, grazie alla sintesi volcale.</p>
+				<iframe width="640" height="390" src="//www.youtube.com/embed/GAbvqngotLY" frameborder="0" allowfullscreen></iframe>
+                <a name="coding_easy"></a>
                 <p>CoderBot è inoltre programmabile tramite un linguaggio a blocchi (blockly) specifico per bambini dai 6 anni in avanti.</p>
                 <img src="../img/coding.png" width="400">
                 <p>L'editor è configurabile in vari livelli di complessità e completezza delle istruzioni, in modo da poter facilitare l'apprendimento per gradi.</p>
@@ -151,13 +156,18 @@
 
 <span class="n">bot</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">speed</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">elapse</span><span class="o">=</span><span class="mf">2.5</span><span class="p">)</span>
 <span class="n">bot</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="n">speed</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">elapse</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span></code></pre></div>
+				<a name="comp_vision"></a>
 				<p>Grazie alla Camera è in grado di riprendere immagini e trasmetterle al dispositivo usato per pilotarlo (computer, tablet o smartphone).</p>
+				<a name="obj_rec"></a>
 				<p>Inoltre può utilizzare le immagini per evitare ostacoli:</p>
 				<p>[Esempio di riconoscimento ostacolo]</p>
+				<a name="line_follower"></a>
 				<p>Per riconoscere e seguire linee:</p>
 				<p>[Esempio di line follower]</p>
+				<a name="color_rec"></a>				
 				<p>Per riconoscere oggetti in base al loro colore:</p>
 				<p>[Esempio di color catcher]</p>
+				<a name="face_rec"></a>				
 				<p>E' inoltre in grado di riconoscere visi di persone e simboli predefiniti.</p>
 				<p>[Esempio di face finder]</p>
 				<p>[Esempio di signal finder]</p>

@@ -1,225 +1,30 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CoderBot - An open, programmable robot</title>
-    <description>CoderBot is an open source, raspberry pi robot specialized in teaching kids the basic of robotics and coding.
-</description>
-    <link>http://coderbot.org/helloworld/</link>
-    <atom:link href="http://coderbot.org/helloworld/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 23 Oct 2014 23:09:52 +0200</pubDate>
-    <lastBuildDate>Thu, 23 Oct 2014 23:09:52 +0200</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
-    
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% for post in site.posts limit:10 %}
       <item>
-        <title>Esploratore</title>
-        <description>&lt;h3 id=&quot;descrizione&quot;&gt;Descrizione&lt;/h3&gt;
-
-&lt;p&gt;Il mondo è diverso visto da un robot. Specialmente se il robot ha un occhio solo, che guarda sempre avanti e in basso.
-In questo gioco dovremo cercare di orientarci in un ambiente sconosciuto, ricostruendone una mappa, avendo a disposizione solo le immagini che arrivano dal robot.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/helloworld/img/mars_1140x300.jpg&quot; alt=&quot;Mars&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;requisiti&quot;&gt;Requisiti&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Un ambiente isolato da quello dove ci troviamo (ad esempio la stanza o la classe a fianco)&lt;/li&gt;
-  &lt;li&gt;Alcuni fogli di carta, matita e gomma&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;preparazione&quot;&gt;Preparazione&lt;/h3&gt;
-&lt;p&gt;Ci si dispone in due gruppi: il primo prepara l’ambiente da esplorare in modo che sia sufficientemente complicato da esplorare ma percorribile per il robot.
-I due gruppi scelgono alcuni oggetti con forma e colore ben distinti, definiti “tesori”. Questi oggetti saranno posti nella stanza da esplorare e la loro identificazione e ubicazione costituirà l’obiettivo del gioco.
-Ad esempio, si possono predisporre degli ostacoli con dei libri, scatole, oggetti vari che si trovano nella stanza, ma in posizioni diverse da quelle solite.
-Il secondo gruppo si trova in una stanza vicina ma non deve assolutamente avere modo di osservare la prima, 
-A questo punto il robot viene posto, acceso, all’interno della stanza e il gioco comincia.&lt;/p&gt;
-
-&lt;h3 id=&quot;il-gioco&quot;&gt;Il gioco&lt;/h3&gt;
-&lt;p&gt;Il secondo gruppo pilota il robot e cerca di orientarsi e ricostruire una mappa dell’ambiente e di trovare i “tesori” e la loro posizione sulla mappa.
-Il gioco finisce dopo un tempo prestabilito, o quando tutti i tesori sono stati trovati e il gruppo degli Esploratori decide che la mappa è completa
-Valutazione e premi
-Terminato il gioco, si valuta la mappa rispetto alla reale conformazione della stanza, 1 punto per ogni ostacolo correttamente tracciato e 5 per ogni tesoro trovato e correttamente posizionato.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
-        <link>http://coderbot.org/helloworld/project/2014/10/01/it-prj-play-1.html</link>
-        <guid isPermaLink="true">http://coderbot.org/helloworld/project/2014/10/01/it-prj-play-1.html</guid>
-        
-        <category>play,</category>
-        
-        <category>single,</category>
-        
-        <category>group,</category>
-        
-        <category>class</category>
-        
-        
-        <category>project</category>
-        
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.content | xml_escape }}</description>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        {% for tag in post.tags %}
+        <category>{{ tag | xml_escape }}</category>
+        {% endfor %}
+        {% for cat in post.categories %}
+        <category>{{ cat | xml_escape }}</category>
+        {% endfor %}
       </item>
-    
-      <item>
-        <title>Fuga dal labirinto</title>
-        <description>&lt;h3 id=&quot;descrizione&quot;&gt;Descrizione&lt;/h3&gt;
-&lt;p&gt;CoderBot si è perso nel labirinto e non sa come uscirne. 
-Noi conosciamo la strada ma possiamo comunicare con lui solo con istruzioni semplici: avanti indietro, gira a destra, gira a sinistra.
-Per complicare il tutto, possiamo comunicare con CoderBot solo una volta, all’inizio.
-Riusciremo a metterlo in salvo?
-Per risolvere il problema sarà necessario definire il percorso del robot, scomporlo in azioni elementari e tradurre il tutto in una sequenza di istruzioni.&lt;/p&gt;
-
-&lt;h3 id=&quot;requisiti&quot;&gt;Requisiti&lt;/h3&gt;
-&lt;p&gt;Uno spazio di circa 2 metri per due.
-Alcuni oggetti facilmente spostabili, come scatole o libri, per costruire il labirinto
-Fogli di carta e pennarelli colorati &lt;/p&gt;
-
-&lt;h3 id=&quot;preparazione&quot;&gt;Preparazione&lt;/h3&gt;
-&lt;p&gt;Ci si dispone in due gruppi con ruoli diversi. Nel corso del gioco i gruppi si scambiano i ruoli in modo che entrambi abbiano eseguito lo stesso tipo di attività. 
-Il primo gruppo prepara il labirinto e posiziona il robot; il secondo gruppo elabora il percorso e la sequenza di operazioni.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/helloworld/img/math_700x300.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;il-gioco&quot;&gt;Il gioco&lt;/h3&gt;
-&lt;p&gt;Il primo gruppo ha preparato un labirinto con gli ostacoli a disposizione, cercando di rendere più difficile possibile l’uscita dal labirinto, che deve comunque essere possibile.
-Il secondo gruppo analizza il labirinto ed elabora un percorso per far uscire il robot.
-Il percorso deve essere convertito in azioni elementari: avanti, destra, etc. prima sulla carta, poi programmando direttamente il bot.
-Si ha a disposizione un numero predeterminato di tentativi per uscire dal labirinto.
-Si attribuisce un punteggio in base al tempo impiegato per uscire dal labirinto, o una penalità se il robot non è stato in grado di uscire. &lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
-        <link>http://coderbot.org/helloworld/project/2014/10/01/it-prj-learn-1.html</link>
-        <guid isPermaLink="true">http://coderbot.org/helloworld/project/2014/10/01/it-prj-learn-1.html</guid>
-        
-        <category>learn</category>
-        
-        
-        <category>project</category>
-        
-      </item>
-    
-      <item>
-        <title>Benvenuti nel nuovo sito di CoderBot</title>
-        <description>&lt;p&gt;CoderBot finalmente ha un sito che raccoglie tutte le informazioni necessarie a costruirne un esemplare partendo da materiali facilmente reperibili.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/helloworld/img/build_hw.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Oltre alla lista completa delle componenti, nella sezione &lt;a href=&quot;/helloworld/it/how_to_build_mh.html&quot;&gt;telaio&lt;/a&gt; sono disponibili i disegni del telai, pronti per essere tagliati tramite lasercutter, mentre nella sezione &lt;a href=&quot;/helloworld/it/how_to_build_hw.html&quot;&gt;hardware&lt;/a&gt; sono disponibili gli schemi dei circuiti che possono essere realizzati su una breadborad oppure con schede millefori per prototipazioni.&lt;/p&gt;
-
-&lt;p&gt;Nelle pagine &lt;a href=&quot;/helloworld/it/how_to_build_sw.html&quot;&gt;software&lt;/a&gt; invece sono descritte le componenti software con relative istruzioni per l’installazione.&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
-        <link>http://coderbot.org/helloworld/blog/2014/10/01/it-coderbot-nuovo-sito.html</link>
-        <guid isPermaLink="true">http://coderbot.org/helloworld/blog/2014/10/01/it-coderbot-nuovo-sito.html</guid>
-        
-        <category>doc</category>
-        
-        <category>announce</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Pathfinder</title>
-        <description>&lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-&lt;p&gt;Il mondo è diverso visto da un robot. Specialmente se il robot ha un occhio solo, che guarda sempre avanti e in basso.
-In questo gioco dovremo cercare di orientarci in un ambiente sconosciuto, ricostruendone una mappa, avendo a disposizione solo le immagini che arrivano dal robot.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/helloworld/img/mars_1140x300.jpg&quot; alt=&quot;Mars&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;requisites&quot;&gt;Requisites&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Un ambiente isolato da quello dove ci troviamo (ad esempio la stanza o la classe a fianco)&lt;/li&gt;
-  &lt;li&gt;Alcuni fogli di carta, matita e gomma&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;preparation&quot;&gt;Preparation&lt;/h3&gt;
-&lt;p&gt;Ci si dispone in due gruppi: il primo prepara l’ambiente da esplorare in modo che sia sufficientemente complicato da esplorare ma percorribile per il robot.
-I due gruppi scelgono alcuni oggetti con forma e colore ben distinti, definiti “tesori”. Questi oggetti saranno posti nella stanza da esplorare e la loro identificazione e ubicazione costituirà l’obiettivo del gioco.
-Ad esempio, si possono predisporre degli ostacoli con dei libri, scatole, oggetti vari che si trovano nella stanza, ma in posizioni diverse da quelle solite.
-Il secondo gruppo si trova in una stanza vicina ma non deve assolutamente avere modo di osservare la prima, 
-A questo punto il robot viene posto, acceso, all’interno della stanza e il gioco comincia.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-game&quot;&gt;The game&lt;/h3&gt;
-&lt;p&gt;Il secondo gruppo pilota il robot e cerca di orientarsi e ricostruire una mappa dell’ambiente e di trovare i “tesori” e la loro posizione sulla mappa.
-Il gioco finisce dopo un tempo prestabilito, o quando tutti i tesori sono stati trovati e il gruppo degli Esploratori decide che la mappa è completa
-Valutazione e premi
-Terminato il gioco, si valuta la mappa rispetto alla reale conformazione della stanza, 1 punto per ogni ostacolo correttamente tracciato e 5 per ogni tesoro trovato e correttamente posizionato.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
-        <link>http://coderbot.org/helloworld/project/2014/10/01/en-prj-play-1.html</link>
-        <guid isPermaLink="true">http://coderbot.org/helloworld/project/2014/10/01/en-prj-play-1.html</guid>
-        
-        <category>play,</category>
-        
-        <category>single,</category>
-        
-        <category>group,</category>
-        
-        <category>class</category>
-        
-        
-        <category>project</category>
-        
-      </item>
-    
-      <item>
-        <title>Escape the maze</title>
-        <description>&lt;h3 id=&quot;descrizione&quot;&gt;Descrizione&lt;/h3&gt;
-&lt;p&gt;CoderBot si è perso nel labirinto e non sa come uscirne. 
-Noi conosciamo la strada ma possiamo comunicare con lui solo con istruzioni semplici: avanti indietro, gira a destra, gira a sinistra.
-Per complicare il tutto, possiamo comunicare con CoderBot solo una volta, all’inizio.
-Riusciremo a metterlo in salvo?
-Per risolvere il problema sarà necessario definire il percorso del robot, scomporlo in azioni elementari e tradurre il tutto in una sequenza di istruzioni.&lt;/p&gt;
-
-&lt;h3 id=&quot;requisiti&quot;&gt;Requisiti&lt;/h3&gt;
-&lt;p&gt;Uno spazio di circa 2 metri per due.
-Alcuni oggetti facilmente spostabili, come scatole o libri, per costruire il labirinto
-Fogli di carta e pennarelli colorati &lt;/p&gt;
-
-&lt;h3 id=&quot;preparazione&quot;&gt;Preparazione&lt;/h3&gt;
-&lt;p&gt;Ci si dispone in due gruppi con ruoli diversi. Nel corso del gioco i gruppi si scambiano i ruoli in modo che entrambi abbiano eseguito lo stesso tipo di attività. 
-Il primo gruppo prepara il labirinto e posiziona il robot; il secondo gruppo elabora il percorso e la sequenza di operazioni.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/helloworld/img/math_700x300.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;il-gioco&quot;&gt;Il gioco&lt;/h3&gt;
-&lt;p&gt;Il primo gruppo ha preparato un labirinto con gli ostacoli a disposizione, cercando di rendere più difficile possibile l’uscita dal labirinto, che deve comunque essere possibile.
-Il secondo gruppo analizza il labirinto ed elabora un percorso per far uscire il robot.
-Il percorso deve essere convertito in azioni elementari: avanti, destra, etc. prima sulla carta, poi programmando direttamente il bot.
-Si ha a disposizione un numero predeterminato di tentativi per uscire dal labirinto.
-Si attribuisce un punteggio in base al tempo impiegato per uscire dal labirinto, o una penalità se il robot non è stato in grado di uscire. &lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
-        <link>http://coderbot.org/helloworld/project/2014/10/01/en-prj-learn-1.html</link>
-        <guid isPermaLink="true">http://coderbot.org/helloworld/project/2014/10/01/en-prj-learn-1.html</guid>
-        
-        <category>learn</category>
-        
-        
-        <category>project</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to CoderBot all-new website</title>
-        <description>&lt;p&gt;CoderBot finally gets a whole new website with all the information required to actually make the robot out of industry-standard parts.
-Check out the CoderBot [mechanics][coderbot-make-mech] and &lt;a href=&quot;how_to_build_2.html&quot;&gt;hardware&lt;/a&gt; documentation for mechanical and electronics assembly instructions.
-Check out the CoderBot &lt;a href=&quot;how_to_build_3.html&quot;&gt;software&lt;/a&gt; documentation for instructions on installing and configuring the software components.&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
-        <link>http://coderbot.org/helloworld/blog/2014/10/01/en-coderbot-nuovo-sito.html</link>
-        <guid isPermaLink="true">http://coderbot.org/helloworld/blog/2014/10/01/en-coderbot-nuovo-sito.html</guid>
-        
-        <category>doc</category>
-        
-        <category>announce</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
+    {% endfor %}
   </channel>
 </rss>

@@ -1,104 +1,8 @@
-<!DOCTYPE html>
-<html>
+---
+layout: en/home
+---
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="CoderBot is an open source, raspberry pi robot specialized in teaching kids the basic of robotics and coding.
-">
-    <meta name="author" content="">
-
-    <title>CoderBot - An open, programmable robot</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="/helloworld/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="/helloworld/css/coderbot.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="/helloworld/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
-    <!-- jQuery Version 1.11.0 -->
-    <script src="/helloworld/js/jquery-1.11.0.js"></script>
-
-    <!-- jQuery Version 1.11.0 -->
-    <script src="/helloworld/js/bootstrap.min.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <link rel="canonical" href="http://coderbot.org/helloworld/en/">
-</head>
-
-
-  <body>
-    <!-- Page Content -->
-    <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide" style="height:100%;">
-        <!-- Wrapper for slides -->
-            <div class="item active">
-                <div class="fill" style="background-image:url('../img/home_2.jpg');"></div>
-                <!--div class="carousel-caption">
-                    <h2>CoderBot, a programmable</h2>
-                </div-->
-            </div>
-     </header>
-    <div class="container">
-
-    <header class="site-header">
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" style="padding-top:0px;" href="/helloworld/it/index.html"><img src="../img/coderbot_logo_79.png">CoderBot</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/helloworld/en/about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="/helloworld/en/how_to_build_it.html">Make</a>
-                    </li>
-                    <li>
-                        <a href="/helloworld/en/projects.html">Play & Learn</a>
-                    </li>
-                    <li>
-                        <a href="/helloworld/en/contact.html">Contacts</a>
-                    </li>
-                    <li>
-                        <a href="https://groups.google.com/forum/#!forum/coderbot-users" target="new">Forum</a>
-                    </li>
-                    <li>
-                        <a href="/helloworld/en/blog-home-1.html">News</a>
-                    </li>
-                    <li>
-                        <a href="/helloworld/it/index.html">Italian</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-</header>
-
-
-                <!-- Marketing Icons Section -->
+        <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
@@ -112,7 +16,7 @@
                         <p class="">No need to be an expert in Information Technology or Electronics to be able to use it.</p>
                     </div>
                     <div class="panel-body">
-                        <img class="img-responsive img-portfolio img-hover" src="/helloworld/img/easy.jpg" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{site.baseurl}}/img/easy.jpg" alt="">
                         <a href="prj_fun.html" class="btn btn-default">Play!</a>
                     </div>
                 </div>
@@ -124,7 +28,7 @@
                         <p class="">Learn logic, coding skills and much more, having fun.</p>
                     </div>
                     <div class="panel-body">
-                        <img class="img-responsive img-portfolio img-hover" src="/helloworld/img/learn.jpg" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{site.baseurl}}/img/learn.jpg" alt="">
                         <a href="#" class="btn btn-default">Discover projects</a>
                     </div>
                 </div>
@@ -136,7 +40,7 @@
                     	<p class="">CoderBot is suited for use in the classroom.</p>
                     </div>
                     <div class="panel-body">
-                        <img class="img-responsive img-portfolio img-hover" src="/helloworld/img/school.jpg" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{site.baseurl}}/img/school.jpg" alt="">
                         <a href="prj_learn.html" class="btn btn-default">Discover projects</a>
                     </div>
                 </div>
@@ -151,7 +55,7 @@
                         <p class="">CoderBot is an open source and hardware projects.</p>
                     </div>
                     <div class="panel-body">
-						<img class="img-responsive img-portfolio img-hover" src="/helloworld/img/open.jpg" alt="">
+						<img class="img-responsive img-portfolio img-hover" src="{{site.baseurl}}/img/open.jpg" alt="">
                         <a href="#" class="btn btn-default">Download the source</a>
                     </div>
                 </div>
@@ -163,7 +67,7 @@
                         <p class="">Download the schematics and build your very own CoderBot in a FabLab or Makerspace.</p>
                     </div>
                     <div class="panel-body">
-                        <img class="img-responsive img-portfolio img-hover" src="/helloworld/img/maker.jpg" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{site.baseurl}}/img/maker.jpg" alt="">
                         <a href="how_to_build_it.html" class="btn btn-default">Make it</a>
                     </div>
                 </div>
@@ -175,7 +79,7 @@
                         <p class="desc-over">Modify, hack, extend CoderBot.</p>
                     </div>
                     <div class="panel-body">
-                        <img class="img-responsive img-portfolio img-hover" src="/helloworld/img/extend.jpg" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{site.baseurl}}/img/extend.jpg" alt="">
                         <a href="#" class="btn btn-default">Discover examples</a>
                     </div>
                 </div>
@@ -194,7 +98,7 @@
                         <p class="">CoderBot si controlla tramite un comune browser connesso al bot via wifi, non è necessario installare software.</p>
                     </div>
                     <div class="panel-body">
-                        <img class="img-responsive img-portfolio img-hover" src="/helloworld/img/wifi.png" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{site.baseurl}}/img/wifi.png" alt="">
                         <a href="prj_fun.html" class="btn btn-default">Gioca!</a>
                     </div>
                 </div>
@@ -206,7 +110,7 @@
                         <p class="">L'interfaccia di programmazione presenta livelli di complessità crescenti, adatta dai 6 anni in avanti.</p>
                     </div>
                     <div class="panel-body">
-                        <img class="img-responsive img-portfolio img-hover" src="/helloworld/img/coding.png" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{site.baseurl}}/img/coding.png" alt="">
                         <a href="prj_fun.html" class="btn btn-default">Gioca!</a>
                     </div>
                 </div>
@@ -218,7 +122,7 @@
                         <p class="">La telecamera permette il riconoscimento di oggetti, ostacoli, percorsi, simboli per sviluppare progetti e giochi complessi.</p>
                     </div>
                     <div class="panel-body">
-                        <img class="img-responsive img-portfolio img-hover" src="/helloworld/img/eye.png" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{site.baseurl}}/img/eye.png" alt="">
                         <a href="prj_fun.html" class="btn btn-default">Gioca!</a>
                     </div>
                 </div>
@@ -230,7 +134,7 @@
                         <p class="">CoderBot può usare l'altoparlante per comunicare: emettendo suoni o, grazie alla sintesi vocale, frasi definite dal programma.</p>
                     </div>
                     <div class="panel-body">
-                        <img class="img-responsive img-portfolio img-hover" src="/helloworld/img/speak.png" alt="">
+                        <img class="img-responsive img-portfolio img-hover" src="{{site.baseurl}}/img/speak.png" alt="">
                         <a href="prj_fun.html" class="btn btn-default">Gioca!</a>
                     </div>
                 </div>
@@ -292,19 +196,3 @@
 
         <hr>
 
-
-
-    <hr>
-<footer class="site-footer">
-            <div class="row">
-                <div class="col-lg-12">
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work by <a xmlns:cc="http://creativecommons.org/ns#" href="http://coderbot.org" property="cc:attributionName" rel="cc:attributionURL">CoderBot</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-                </div>
-            </div>
-</footer>
-
-
-    </div>
-    <!-- /.container -->
-  </body>
-</html>

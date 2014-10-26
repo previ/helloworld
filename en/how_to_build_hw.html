@@ -37,26 +37,66 @@ layout: en/default
         <div class="row">
 
             <div class="col-md-12">
-            	<h2>Elenco delle componenti</h2>
-            	<ul>
-            		<li>1 Raspberry PI - Model B o Model B+</li>
-            		<li>1 Raspberry Camera module</li>
-            		<li>1 Scheda di controllo motori</li>
-            		<li>1 Batteria</li>
-            		<li>2 Cavi USB</li>
-            	</ul>
+            	<p>This section cover the hardware parts of CoderBots.</p>
                 <h3>Raspberry PI</h3>
-                <p>CoderBot utilizza Raspberry Pi come controller principale, sono adatti il Model B e il recente B+, quest'ultimo preferibile per i ridotti consumi.</p>
-                <p>Il Model A può essere utilizzato per realizzare un robot "cieco", infatti per gestire la Camera, e soprattutto il riconoscimento degli oggetti, sono necessari circa 384MB (il Model B ne ha 512, il Model A si ferma a 256MB).</p>
+                <p>CoderBot is based on Raspberry Pi, both Model B or the recent B+ are fine, the B+ is preferrable for reduced power consumption.</p>
+                <p>Model A has not enough memory for handling video streaming but can be used to build a "blind" bot.</p>
                 <h3>Camera module</h3>
-                <p>Esistono due tipi di camera: una normale e una modificata per essere sensibile all'infrarosso per visione notturna. Salvo applicazioni particolari, si utilizza la Camera normale.</p>
-                <h3>Scheda di controllo motori</h3>
-                <p>Ne esistono di due tipi: una adatta al controllo di motori in corrente continua e una specifica e semplificata per controllare servomotori in modalità PWM, da scegliere in base alle caratteristiche dei motori.</p>
-                <h3>Batteria</h3>
-				<p>La batteria deve avere due uscite indipendenti, una per alimentare Raspberry e una per alimentare i mototi tramite la scheda di controllo. 
-				E' possibile in alternativa utilizzare due batterie più piccole indipendenti a condizione  che la corrente in uscita sia di almeno 1A su 5V</p>
-                <h3>Cavi USB</h3>
-                <p>Due cavi USB-A - USB-Micro (maschio-maschio) per collegare l'output della batteria a Raspberry e alla Scheda di controllo motori</p>
+                <p>There exists two different versions of the camera module, one for normal, visible light, and one that has ben modified to capture infrared light for night vision. The CoderBot has been build and tested with the normal camera only.</p>
+                <h3>Motor control board (hat)</h3>
+                <p>There are two kind of board: one is for dc motors and one is for servo motors, controlled via PWM. Choose it according to the motors.</p>
+                <h3>Battery</h3>
+				<p>Battery must provide enough energy to power both the PI and the motors, so it must be at least a 5-6000mAh. The battery pack can be one but must provide separate usb plugs, with separate voltage regulators. 
+				It is also possible to use smaller independent battery packs.</p>
+                <h3>USB Cables</h3>
+                <p>Two short USB-A - USM-Micro to link the 2.0A battery pack output to the Raspberry and the 1.0A output to the motor controller board.</p>
+            	<h2>List of parts</h2>
+                <table class="table">
+                <thead>
+                <tr>
+                <th>Component</th>
+                <th>Quantity</th>
+                <th>link</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>Raspberry PI - Model B or Model B+</td>
+                <td>1</td>
+                <td>link</td>
+				</tr>
+                <tr>
+                <td>Raspberry PI Camera module</td>
+                <td>1</td>
+                <td>link</td>
+				</tr>
+                <tr>
+                <td>Wi-Fi</td>
+                <td>1</td>
+                <td>link</td>
+				</tr>
+                <tr>
+                <td>SD card 8GB</td>
+                <td>1</td>
+                <td>link</td>
+				</tr>
+                <tr>
+                <td>Motor control board, DC or servo</td>
+                <td>1</td>
+                <td>link</td>
+				</tr>
+                <tr>
+                <td>Battery</td>
+                <td>1</td>
+                <td>link</td>
+				</tr>
+                <tr>
+                <td>USB-A - USB micro cable</td>
+                <td>2</td>
+                <td>link</td>
+				</tr>
+				</tbody>
+				</table>            	
             </div>
 
         </div>

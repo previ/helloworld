@@ -11,7 +11,7 @@ language: it
 ---
 CoderBot finalmente ha un sito che raccoglie tutte le informazioni necessarie a costruirne un esemplare partendo da materiali facilmente reperibili.
 
-![My helpful screenshot]({{ site.baseurl }}/img/build_hw.jpg)
+![make]({{ site.baseurl }}/img/build_hw.jpg)
 
 Oltre alla lista completa delle componenti, nella sezione [telaio][coderbot-make-mh] sono disponibili i disegni del telai, pronti per essere tagliati tramite lasercutter, mentre nella sezione [hardware][coderbot-make-hw] sono disponibili gli schemi dei circuiti che possono essere realizzati su una breadborad oppure con schede millefori per prototipazioni.
 

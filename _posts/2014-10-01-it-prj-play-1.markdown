@@ -15,7 +15,7 @@ language: it
 Il mondo è diverso visto da un robot. Specialmente se il robot ha un occhio solo, che guarda sempre avanti e in basso.
 In questo gioco dovremo cercare di orientarci in un ambiente sconosciuto, ricostruendone una mappa, avendo a disposizione solo le immagini che arrivano dal robot.
 
-![Mars]({{ site.baseurl }}/img/mars_1140x300.jpg)
+![mars]({{ site.baseurl }}/img/mars_1140x300.jpg)
 
 ### Requisiti
 - Un ambiente isolato da quello dove ci troviamo (ad esempio la stanza o la classe a fianco)

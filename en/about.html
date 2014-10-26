@@ -5,13 +5,13 @@ layout: en/default
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Cosa è CoderBot
-                    <small>Com'è fatto, cosa può fare</small>
+                <h1 class="page-header">About CoderBot
+                    <small>What is it, what can it do</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">CoderBot</a>
                     </li>
-                    <li class="active">Cosa è</li>
+                    <li class="active">About</li>
                 </ol>
             </div>
         </div>
@@ -37,28 +37,33 @@ layout: en/default
 
         <!-- Related Projects Row -->
         <div class="row">
-
             <div class="col-md-12">
-                <h2>Che cos'è</h2>
-                <p>CoderBot è un robot orientato alla didattica.</p>
-                <p>L'obiettivo principale del progetto è realizzare un robot in grado di essere programmato da bambini dai 6 anni in avanti, e che rimanga interessante e offra spunti per l'apprendimento a ragazzi fino ai 14 anni (e oltre).</p>
+                <h2>Why CoderBot</h2><a name="why"></a>
+                <p>CoderBot is a robot with didactical purpose.</p>
+                <p class="lead">The main goal of the project is to realize a simple robot which can be programmed by kids from 6 and up.</p>
 				<img src="../img/home_2.jpg" width="700">
-				<h3>Come è fatto</h3>
-                <p>E' un veicolo con due ruote motrici anteriori indipendenti e un terzo punto di appoggio posteriore costituito da una sfera libera.</p>
-				<p>E' basato su <a href="http://www.raspberrypi.org" target="new">Raspberry PI</a>, un computer completo (CPU, GPU, audio, memoria RAM e flash).</p>
-				<p>Alla scheda principale sono collegati una videocamera, una scheda di controllo per i due motori (DC oppure servo) e un adattatore wifi. L'audio è amplificato tramite un altoparlante autoalimentato.</p>
-				<p>Il sistema operativo è Raspbian, una versione di Linux Debian specifica per Raspberry, su cui si appoggiano alcune componenti per gestire rete, videocamera, motori e interfaccia utente, quest'ultima realizzata come una web application html5 a sua volta erogata da un web server.</p>
-                <h3>Cosa può fare</h3>
-                <p>Il robot è in grado di muoversi su superfici piane: avanti, indietro e ruotare sul posto o curvare con raggi variabili, agendo sulla velocità dei due motori.</p>
+				<h3>How it is made</h3><a name="how"></a>
+                <p>CoderBot is a vehicle with two front, independently powered wheels and a rear ball caster.</p>
+                <p>The logic is based on <a href="http://www.raspberrypi.org" target="new">Raspberry PI</a>, a complete computer (CPU, GPU, audio, RAM e flash) small but powerful enough to run the logic and provide live image streaming via wifi.
+				<p>The main board is linked to a dedicated videocamera, a motor control board and a wifi adapter. Audio is amplified through an external speaker.</p>
+				<p>The Operative System is Raspbian, a customised Linux Debian distribution specific for Raspberry. On top of that, several modules run: networking, camera, motor driver, user interface. The UI is actually an html5 application, provided by an embedded webserver. 
+                <h3>What can it do</h3><a name="what"></a>
+                <p>The robot can move on plain surfaces, moving in any directions and performing turn of variable width, according on the programmed motor speed.</p>
                 <img src="../img/easy.jpg" width="400">
-                <p>E' controllabile via web tramite un pc, un tablet o uno smartphone che sia in grado di connettersi via wifi al robot.</p>
-                <img src="../img/rover.jpg" width="400">
-                <p>CoderBot può essere utilizzato come un "rover" teleguidato, grazie alla telecamera integrata trasmette le immagini dell'ambiente che gli si trova davanti.</p>
+                <a name="wifi"></a>
+                <p>The robot is controllable by any device capable of running an html5 compatible browser and connect via wifi</p>
+                <img src="../img/mars_700x300.jpg" width="400">
+                <a name="rover"></a>
+                <p>CoderBot can be used as a remote control "rover" and send live (albeit slow) video streaming of the videocamera.</p>
+                <img src="../img/remote.jpg">
+                <a name="audio"></a>
+                <p>The robot can emit sounds: both canned wav or mp3 or synthesized speech.</p>
+				<iframe width="640" height="390" src="//www.youtube.com/embed/GAbvqngotLY" frameborder="0" allowfullscreen></iframe>
+                <a name="coding_easy"></a>
+                <p>Most important, CoderBot is also programmable with a simple, function blocks-based (<a href="https://developers.google.com/blockly/" target="new">blockly</a>), specifically designed for kids.</p>
                 <img src="../img/coding.png" width="400">
-                <p>CoderBot è inoltre programmabile tramite un linguaggio a blocchi (blockly) specifico per bambini dai 6 anni in avanti.</p>
-                <img src="../img/coding.png" width="400">
-                <p>L'editor è configurabile in vari livelli di complessità e completezza delle istruzioni, in modo da poter facilitare l'apprendimento per gradi.</p>
-                <p>Per i più avanzati, CoderBot è inoltre programmabile direttamente in python, utilizzando delle librerie molto semplici ed intuitive.</p>
+                <p>The programming editor can be configured in order to provide a gradually complex and complete environment.</p>
+                <p>For the advanced programmers, CoderBot is also programmable in python.</p>
 {% highlight python %}
 import coderbot
 
@@ -68,16 +73,21 @@ bot.forward(speed=100, elapse=2.5)
 bot.left(speed=60, elapse=1)
 
 {% endhighlight %}
-				<p>Grazie alla Camera è in grado di riprendere immagini e trasmetterle al dispositivo usato per pilotarlo (computer, tablet o smartphone).</p>
-				<p>Inoltre può utilizzare le immagini per evitare ostacoli:</p>
-				<p>[Esempio di riconoscimento ostacolo]</p>
-				<p>Per riconoscere e seguire linee:</p>
-				<p>[Esempio di line follower]</p>
-				<p>Per riconoscere oggetti in base al loro colore:</p>
-				<p>[Esempio di color catcher]</p>
-				<p>E' anche in grado di riconoscere visi di persone e simboli predefiniti.</p>
-				<p>[Esempio di face finder]</p>
-				<p>[Esempio di signal finder]</p>
+				<a name="comp_vision"></a>
+				<p>The videocamera can live stream what is in front of the bot and can take snapshots.</p>
+				<a name="obj_rec"></a>
+				<p>The computer vision functions enable object detection and avoidance:</p>
+				<p>[Coming soon: video of object detection]</p>
+				<a name="line_follower"></a>
+				<p>Line following:</p>
+				<p>[Coming soon: video of line follower]</p>
+				<a name="color_rec"></a>				
+				<p>Color detection:</p>
+				<p>[Coming soon: video of color catcher]</p>
+				<a name="face_rec"></a>				
+				<p>And can also detect faces and predefined symbols.</p>
+				<p>[Coming soon: video of face finder]</p>
+				<p>[Coming soon: video of signal finder]</p>
             </div>
 
         </div>

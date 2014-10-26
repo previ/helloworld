@@ -26,7 +26,7 @@ Fogli di carta e pennarelli colorati
 Ci si dispone in due gruppi con ruoli diversi. Nel corso del gioco i gruppi si scambiano i ruoli in modo che entrambi abbiano eseguito lo stesso tipo di attività. 
 Il primo gruppo prepara il labirinto e posiziona il robot; il secondo gruppo elabora il percorso e la sequenza di operazioni.
 
-![My helpful screenshot]({{ site.baseurl }}/img/math_700x300.jpg)
+![labirinto]({{ site.baseurl }}/img/math_700x300.jpg)
 
 ### Il gioco
 Il primo gruppo ha preparato un labirinto con gli ostacoli a disposizione, cercando di rendere più difficile possibile l'uscita dal labirinto, che deve comunque essere possibile.

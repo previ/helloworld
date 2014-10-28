@@ -4,10 +4,10 @@
     <title>CoderBot - An open, programmable robot</title>
     <description>CoderBot is an open source, raspberry pi robot specialized in teaching kids the basic of robotics and coding.
 </description>
-    <link>http://coderbot.org/helloworld/</link>
-    <atom:link href="http://coderbot.org/helloworld/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 27 Oct 2014 23:25:17 +0100</pubDate>
-    <lastBuildDate>Mon, 27 Oct 2014 23:25:17 +0100</lastBuildDate>
+    <link>http://coderbot.org/</link>
+    <atom:link href="http://coderbot.org/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 28 Oct 2014 21:46:12 +0100</pubDate>
+    <lastBuildDate>Tue, 28 Oct 2014 21:46:12 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -17,7 +17,7 @@
 &lt;p&gt;Il mondo è diverso visto da un robot. Specialmente se il robot ha un occhio solo, che guarda sempre avanti e in basso.
 In questo gioco dovremo cercare di orientarci in un ambiente sconosciuto, ricostruendone una mappa, avendo a disposizione solo le immagini che arrivano dal robot.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/helloworld/img/mars_1140x300.jpg&quot; alt=&quot;mars&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/mars_1140x300.jpg&quot; alt=&quot;mars&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;requisiti&quot;&gt;Requisiti&lt;/h3&gt;
 &lt;ul&gt;
@@ -39,8 +39,8 @@ Valutazione e premi
 Terminato il gioco, si valuta la mappa rispetto alla reale conformazione della stanza, 1 punto per ogni ostacolo correttamente tracciato e 5 per ogni tesoro trovato e correttamente posizionato.&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
-        <link>http://coderbot.org/helloworld/project/2014/10/01/it-prj-play-1.html</link>
-        <guid isPermaLink="true">http://coderbot.org/helloworld/project/2014/10/01/it-prj-play-1.html</guid>
+        <link>http://coderbot.org/project/2014/10/01/it-prj-play-1.html</link>
+        <guid isPermaLink="true">http://coderbot.org/project/2014/10/01/it-prj-play-1.html</guid>
         
         <category>play,</category>
         
@@ -73,7 +73,7 @@ Fogli di carta e pennarelli colorati &lt;/p&gt;
 &lt;p&gt;Ci si dispone in due gruppi con ruoli diversi. Nel corso del gioco i gruppi si scambiano i ruoli in modo che entrambi abbiano eseguito lo stesso tipo di attività. 
 Il primo gruppo prepara il labirinto e posiziona il robot; il secondo gruppo elabora il percorso e la sequenza di operazioni.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/helloworld/img/math_700x300.jpg&quot; alt=&quot;labirinto&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/math_700x300.jpg&quot; alt=&quot;labirinto&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;il-gioco&quot;&gt;Il gioco&lt;/h3&gt;
 &lt;p&gt;Il primo gruppo ha preparato un labirinto con gli ostacoli a disposizione, cercando di rendere più difficile possibile l’uscita dal labirinto, che deve comunque essere possibile.
@@ -84,8 +84,8 @@ Si attribuisce un punteggio in base al tempo impiegato per uscire dal labirinto,
 
 </description>
         <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
-        <link>http://coderbot.org/helloworld/project/2014/10/01/it-prj-learn-1.html</link>
-        <guid isPermaLink="true">http://coderbot.org/helloworld/project/2014/10/01/it-prj-learn-1.html</guid>
+        <link>http://coderbot.org/project/2014/10/01/it-prj-learn-1.html</link>
+        <guid isPermaLink="true">http://coderbot.org/project/2014/10/01/it-prj-learn-1.html</guid>
         
         <category>learn</category>
         
@@ -98,16 +98,16 @@ Si attribuisce un punteggio in base al tempo impiegato per uscire dal labirinto,
         <title>Benvenuti nel nuovo sito di CoderBot</title>
         <description>&lt;p&gt;CoderBot finalmente ha un sito che raccoglie tutte le informazioni necessarie a costruirne un esemplare partendo da materiali facilmente reperibili.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/helloworld/img/build_hw.jpg&quot; alt=&quot;make&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/build_hw.jpg&quot; alt=&quot;make&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Oltre alla lista completa delle componenti, nella sezione &lt;a href=&quot;/helloworld/it/how_to_build_mh.html&quot;&gt;telaio&lt;/a&gt; sono disponibili i disegni del telai, pronti per essere tagliati tramite lasercutter, mentre nella sezione &lt;a href=&quot;/helloworld/it/how_to_build_hw.html&quot;&gt;hardware&lt;/a&gt; sono disponibili gli schemi dei circuiti che possono essere realizzati su una breadborad oppure con schede millefori per prototipazioni.&lt;/p&gt;
+&lt;p&gt;Oltre alla lista completa delle componenti, nella sezione &lt;a href=&quot;/it/how_to_build_mh.html&quot;&gt;telaio&lt;/a&gt; sono disponibili i disegni del telai, pronti per essere tagliati tramite lasercutter, mentre nella sezione &lt;a href=&quot;/it/how_to_build_hw.html&quot;&gt;hardware&lt;/a&gt; sono disponibili gli schemi dei circuiti che possono essere realizzati su una breadborad oppure con schede millefori per prototipazioni.&lt;/p&gt;
 
-&lt;p&gt;Nelle pagine &lt;a href=&quot;/helloworld/it/how_to_build_sw.html&quot;&gt;software&lt;/a&gt; invece sono descritte le componenti software con relative istruzioni per l’installazione.&lt;/p&gt;
+&lt;p&gt;Nelle pagine &lt;a href=&quot;/it/how_to_build_sw.html&quot;&gt;software&lt;/a&gt; invece sono descritte le componenti software con relative istruzioni per l’installazione.&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
-        <link>http://coderbot.org/helloworld/blog/2014/10/01/it-coderbot-nuovo-sito.html</link>
-        <guid isPermaLink="true">http://coderbot.org/helloworld/blog/2014/10/01/it-coderbot-nuovo-sito.html</guid>
+        <link>http://coderbot.org/blog/2014/10/01/it-coderbot-nuovo-sito.html</link>
+        <guid isPermaLink="true">http://coderbot.org/blog/2014/10/01/it-coderbot-nuovo-sito.html</guid>
         
         <category>doc</category>
         
@@ -124,7 +124,7 @@ Si attribuisce un punteggio in base al tempo impiegato per uscire dal labirinto,
 &lt;p&gt;The world is different when observed by a robot. Especially if the robot has only one eye, looking forward towards the ground.
 In this game, the robot will be our “explorer” in an unknown space. We, as the rover pilot, will try to draw a map of the space relying only on the images that the rover sends us. &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/helloworld/img/mars_1140x300.jpg&quot; alt=&quot;Mars&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/mars_1140x300.jpg&quot; alt=&quot;Mars&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;requisites&quot;&gt;Requisites&lt;/h3&gt;
 &lt;p&gt;A space isolated from the rover pilot (two adjacent rooms, such as two classes or one class and a corridor)
@@ -143,8 +143,8 @@ The game end when all treasures have been found and the team is satisfied with t
 The explorers gets more points for each treasure found in the correct position on the map.&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
-        <link>http://coderbot.org/helloworld/project/2014/10/01/en-prj-play-1.html</link>
-        <guid isPermaLink="true">http://coderbot.org/helloworld/project/2014/10/01/en-prj-play-1.html</guid>
+        <link>http://coderbot.org/project/2014/10/01/en-prj-play-1.html</link>
+        <guid isPermaLink="true">http://coderbot.org/project/2014/10/01/en-prj-play-1.html</guid>
         
         <category>play,</category>
         
@@ -178,7 +178,7 @@ Some paper and color pens, to draft the path and the instructions&lt;/p&gt;
 Group “A” prepare the maze, which must provide a starting point and a reachable exit.
 Group “B” prepare the robot’s program.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/helloworld/img/math_700x300.jpg&quot; alt=&quot;maze&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/math_700x300.jpg&quot; alt=&quot;maze&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;the-game&quot;&gt;The game&lt;/h3&gt;
 &lt;p&gt;Group “A” has prepared the maze with available obstacles. They must try to build the most difficult, yet “open” maze.
@@ -189,8 +189,8 @@ The “programmers” team gets a point if the robot was able to escape the maze
 
 </description>
         <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
-        <link>http://coderbot.org/helloworld/project/2014/10/01/en-prj-learn-1.html</link>
-        <guid isPermaLink="true">http://coderbot.org/helloworld/project/2014/10/01/en-prj-learn-1.html</guid>
+        <link>http://coderbot.org/project/2014/10/01/en-prj-learn-1.html</link>
+        <guid isPermaLink="true">http://coderbot.org/project/2014/10/01/en-prj-learn-1.html</guid>
         
         <category>learn</category>
         
@@ -201,14 +201,17 @@ The “programmers” team gets a point if the robot was able to escape the maze
     
       <item>
         <title>Welcome to CoderBot all-new website</title>
-        <description>&lt;p&gt;CoderBot finally gets a whole new website with all the information required to actually make the robot out of industry-standard parts.
-Check out the CoderBot [mechanics][coderbot-make-mech] and &lt;a href=&quot;how_to_build_2.html&quot;&gt;hardware&lt;/a&gt; documentation for mechanical and electronics assembly instructions.
+        <description>&lt;p&gt;CoderBot finally gets a whole new website with all the information required to actually make the robot out of industry-standard parts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/build_hw.jpg&quot; alt=&quot;make&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Check out the CoderBot &lt;a href=&quot;how_to_build_1.html&quot;&gt;mechanics&lt;/a&gt; and &lt;a href=&quot;how_to_build_2.html&quot;&gt;hardware&lt;/a&gt; documentation for mechanical and electronics assembly instructions.
 Check out the CoderBot &lt;a href=&quot;how_to_build_3.html&quot;&gt;software&lt;/a&gt; documentation for instructions on installing and configuring the software components.&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 01 Oct 2014 14:00:00 +0200</pubDate>
-        <link>http://coderbot.org/helloworld/blog/2014/10/01/en-coderbot-nuovo-sito.html</link>
-        <guid isPermaLink="true">http://coderbot.org/helloworld/blog/2014/10/01/en-coderbot-nuovo-sito.html</guid>
+        <link>http://coderbot.org/blog/2014/10/01/en-coderbot-nuovo-sito.html</link>
+        <guid isPermaLink="true">http://coderbot.org/blog/2014/10/01/en-coderbot-nuovo-sito.html</guid>
         
         <category>doc</category>
         

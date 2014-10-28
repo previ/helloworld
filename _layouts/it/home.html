@@ -6,7 +6,7 @@
   <body>
     <!-- Page Content -->
     <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide" style="height:100%;">
+    <header id="myCarousel" class="carousel slide" style="_width:100%; height:100%; _position:fixed; _top:0; _left:0;">
         <!-- Wrapper for slides -->
             <div class="item active">
                 <div class="fill" style="background-image:url('../img/home_2.jpg');"></div>
@@ -15,14 +15,11 @@
                 </div-->
             </div>
      </header>
+    <!--div style="visibility:hidden; height:400px; width:100%;"></div-->
     <div class="container">
-
     {% include it/header.html %}
-
         {{ content }}
-
     {% include it/footer.html %}
-
     </div>
     <!-- /.container -->
   </body>  

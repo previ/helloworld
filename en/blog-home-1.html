@@ -37,7 +37,7 @@ layout: en/default
                 {%endif%}
                 <hr>
                 <p>{{post.excerpt}}</p>
-                <a class="btn btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a>
+                <a class="btn btn-primary" href="{{ post.url | prepend: site.baseurl }}">Read More <i class="fa fa-angle-right"></i></a>
 
                 <hr>
 			    {% endif %}

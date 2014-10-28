@@ -10,7 +10,10 @@ author: CoderBot
 language: en
 ---
 CoderBot finally gets a whole new website with all the information required to actually make the robot out of industry-standard parts.
-Check out the CoderBot [mechanics][coderbot-make-mech] and [hardware][coderbot-make-hw] documentation for mechanical and electronics assembly instructions.
+
+![make]({{ site.baseurl }}/img/build_hw.jpg)
+
+Check out the CoderBot [mechanics][coderbot-make-mh] and [hardware][coderbot-make-hw] documentation for mechanical and electronics assembly instructions.
 Check out the CoderBot [software][coderbot-make-sw] documentation for instructions on installing and configuring the software components.
 
 [coderbot-make-mh]: how_to_build_1.html
